@@ -1,0 +1,31 @@
+{
+  "name": "vite-plugin-vue-typed-router",
+  "type": "module",
+  "version": "1.0.0",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --clean",
+    "dev": "vite"
+  },
+  "author": "y779102260@gmail.com",
+  "license": "ISC",
+  "description": "gen typed router for vue router",
+  "peerDependencies": {
+    "vue-router": "^4.1.0"
+  },
+  "devDependencies": {
+    "@tsconfig/node-ts": "^23.6.1",
+    "@tsconfig/node18": "^18.2.4",
+    "@types/node": "^24.3.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.3",
+    "vue-router": "^4.5.1"
+  }
+}
