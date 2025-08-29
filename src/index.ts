@@ -22,7 +22,7 @@ export default function typedRouterPlugin({
     name: "vite-plugin-vue-typed-router",
     enforce: "post",
     configureServer(server) {
-      server.ws.on("my:from-client", (routes: RouteRecordRaw[]) => {
+      server.ws.on("typed-router:routes", (routes: RouteRecordRaw[]) => {
         try {
           // -- code template, every line is a item in the array --
           const header = [
