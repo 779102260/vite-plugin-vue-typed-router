@@ -1,0 +1,10 @@
+# Publish dist only via package.json files field
+src
+node_modules
+.vscode
+.DS_Store
+.idea
+pnpm-lock.yaml
+README.md
+README.en.md
+tsconfig.json

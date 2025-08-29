@@ -1,8 +1,11 @@
 {
   "name": "vite-plugin-vue-typed-router",
   "type": "module",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": {
       "import": "./dist/index.js",
@@ -11,7 +14,8 @@
   },
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts --clean",
-    "dev": "vite"
+    "dev": "vite",
+    "prepublishOnly": "pnpm run build"
   },
   "author": "y779102260@gmail.com",
   "license": "ISC",
