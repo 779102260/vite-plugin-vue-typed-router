@@ -2,6 +2,8 @@
 
 为 Vue Router 4 自动生成「强类型路由映射」的 Vite 插件。开发时根据你的路由表生成 `typed-router.d.ts`，增强 `router.push`、`useRoute` 等 API 的类型提示与校验。
 
+![example](https://user-images.githubusercontent.com/664177/176442066-c4e7fa31-4f06-4690-a49f-ed0fd880dfca.png)
+
 与`unplugin-vue-router`的区别：`unplugin-vue-router`仅支持文件路由，而此插件不受限制。
 
 详情参见官方资料：[typed-routes](https://router.vuejs.org/zh/guide/advanced/typed-routes.html)
