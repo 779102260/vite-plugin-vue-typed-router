@@ -2,6 +2,8 @@
 
 A Vite plugin that auto-generates a strongly typed route map for Vue Router 4. During development it produces `typed-router.d.ts` from your route records, enhancing type safety and IntelliSense for APIs like `router.push` and `useRoute`.
 
+![example](https://user-images.githubusercontent.com/664177/176442066-c4e7fa31-4f06-4690-a49f-ed0fd880dfca.png)
+
 Difference from `unplugin-vue-router`: `unplugin-vue-router` only supports file-based routing, while this plugin is not limited by routing style.
 
 See the official docs: [typed-routes](https://router.vuejs.org/guide/advanced/typed-routes.html)
@@ -39,7 +41,7 @@ export default defineConfig({
     typedRouter({
       // Optional: specify the output directory. Defaults to project root
       // For example, output to src/types → generates src/types/typed-router.d.ts
-      // dir: "src/types",
+      dir: "src/types",
     }),
   ],
 });
