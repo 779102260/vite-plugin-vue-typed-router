@@ -39,7 +39,7 @@ export default defineConfig({
     typedRouter({
       // 可选：将文件输出到指定目录。默认写到项目根目录
       // 例如输出到 src/types：将会生成 src/types/typed-router.d.ts
-      // dir: "src/types",
+      dir: "src/types",
     }),
   ],
 });
