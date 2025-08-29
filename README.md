@@ -1,3 +1,5 @@
+[English DOC](https://github.com/779102260/vite-plugin-vue-typed-router/blob/main/README.en.md)
+
 ## vite-plugin-vue-typed-router
 
 为 Vue Router 4 自动生成「强类型路由映射」的 Vite 插件。开发时根据你的路由表生成 `typed-router.d.ts`，增强 `router.push`、`useRoute` 等 API 的类型提示与校验。
