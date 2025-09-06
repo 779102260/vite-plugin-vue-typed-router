@@ -73,6 +73,7 @@ const router = createRouter({
 });
 
 // 仅开发环境触发：把路由表通过 HMR 事件发给插件
+// 如果你的项目是动态路由，放在动态路由加载后即可
 if (import.meta.hot) {
   import.meta.hot.send("typed-router:routes", router.getRoutes());
 }
