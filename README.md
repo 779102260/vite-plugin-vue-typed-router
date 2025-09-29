@@ -120,6 +120,8 @@ router.push({ name: "user", params: { id: 123 } });
 // router.push({ name: 'docs', params: { slug: 1 } }) // slug 应为 string[]（规范化）或 Array<string | number>（原始）
 ```
 
+[在线demo](https://codesandbox.io/p/devbox/mrn6zq)
+
 ### 生成内容说明
 
 插件会生成如下结构的声明文件（简化示例）：
@@ -176,6 +178,8 @@ declare module "vue-router" {
   - 示例：`dir: 'src/types'` 会输出到 `src/types/typed-router.d.ts`
 
 ### 常见问题（FAQ）
+
+[在线demo](https://codesandbox.io/p/devbox/mrn6zq)
 
 - **没有生成 `typed-router.d.ts`？**
 
